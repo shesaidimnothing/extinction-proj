@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 const areas = [
@@ -44,7 +44,8 @@ const areas = [
   },
 ];
 
-export default function IleDeFrance() {
+// Component that uses useSearchParams
+function AreaList() {
   const searchParams = useSearchParams();
   const areaRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
   
@@ -57,6 +58,49 @@ export default function IleDeFrance() {
     }
   }, [searchParams]);
 
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {areas.map((area, index) => (
+        <motion.div 
+          key={area.id}
+          ref={(el) => { areaRefs.current[area.id] = el; }}
+          className="bg-white rounded-lg shadow-md overflow-hidden"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+        >
+          <div className="p-6">
+            <h2 className="text-2xl font-semibold text-primary mb-3">{area.name}</h2>
+            <p className="text-dark mb-4">{area.description}</p>
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold text-dark mb-2">Villes desservies :</h3>
+              <div className="flex flex-wrap gap-2">
+                {area.districts.slice(0, 8).map((district, i) => (
+                  <span key={i} className="bg-secondary text-dark px-3 py-1 rounded-full text-sm">
+                    {district}
+                  </span>
+                ))}
+                {area.districts.length > 8 && (
+                  <span className="bg-secondary text-dark px-3 py-1 rounded-full text-sm">
+                    +{area.districts.length - 8} autres
+                  </span>
+                )}
+              </div>
+            </div>
+            <Link 
+              href={`/contact?area=${area.id}`}
+              className="bg-primary text-white px-4 py-2 rounded-md font-medium hover:bg-opacity-90 transition-colors inline-block"
+            >
+              Demander un devis
+            </Link>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  );
+}
+
+export default function IleDeFrance() {
   return (
     <div className="py-12 md:py-16 bg-secondary">
       <div className="container mx-auto px-4">
@@ -111,44 +155,9 @@ export default function IleDeFrance() {
             </div>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {areas.map((area, index) => (
-              <motion.div 
-                key={area.id}
-                ref={el => areaRefs.current[area.id] = el}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="p-6">
-                  <h2 className="text-2xl font-semibold text-primary mb-3">{area.name}</h2>
-                  <p className="text-dark mb-4">{area.description}</p>
-                  <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-dark mb-2">Villes desservies :</h3>
-                    <div className="flex flex-wrap gap-2">
-                      {area.districts.slice(0, 8).map((district, i) => (
-                        <span key={i} className="bg-secondary text-dark px-3 py-1 rounded-full text-sm">
-                          {district}
-                        </span>
-                      ))}
-                      {area.districts.length > 8 && (
-                        <span className="bg-secondary text-dark px-3 py-1 rounded-full text-sm">
-                          +{area.districts.length - 8} autres
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                  <Link 
-                    href={`/contact?area=${area.id}`}
-                    className="bg-primary text-white px-4 py-2 rounded-md font-medium hover:bg-opacity-90 transition-colors inline-block"
-                  >
-                    Demander un devis
-                  </Link>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+          <Suspense fallback={<div className="p-8 text-center bg-white rounded-lg shadow-md">Chargement des zones d'intervention...</div>}>
+            <AreaList />
+          </Suspense>
         </div>
 
         <motion.div 

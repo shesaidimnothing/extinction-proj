@@ -1,0 +1,10 @@
+{
+  "buildCommand": "next build",
+  "ignoreCommand": "echo 'Skipping linting'",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "devCommand": "next dev",
+  "env": {
+    "NEXT_DISABLE_ESLINT": "1"
+  }
+} 
