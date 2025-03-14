@@ -93,29 +93,6 @@ const pests = [
     ),
   },
   {
-    id: 'guepes-frelons',
-    title: 'Guêpes et Frelons',
-    description: 'Les guêpes et les frelons construisent des nids dans ou autour des bâtiments. Ils peuvent représenter un danger sérieux, surtout pour les personnes allergiques. Ne tentez pas de retirer un nid vous-même.',
-    signs: [
-      'Présence d\'insectes volants rayés jaune et noir',
-      'Nids en papier mâché dans les combles, sous les toits ou dans le jardin',
-      'Activité accrue en été et début d\'automne',
-      'Bourdonnement audible près du nid',
-    ],
-    risks: [
-      'Piqûres douloureuses, potentiellement dangereuses',
-      'Réactions allergiques graves (choc anaphylactique)',
-      'Stress et anxiété',
-      'Perturbation des activités extérieures',
-    ],
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-        <path d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-      </svg>
-    ),
-  },
-  {
     id: 'mites',
     title: 'Mites',
     description: 'Les mites sont de petits insectes qui peuvent endommager les textiles, les aliments secs et d\'autres matériaux. Il existe différentes espèces de mites, chacune avec ses préférences alimentaires spécifiques.',

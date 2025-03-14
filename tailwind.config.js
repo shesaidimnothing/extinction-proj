@@ -8,14 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#007B3E',
+        primary: '#00A651',
+        primaryDark: '#008C45',
+        primaryLight: '#4CD3A5',
         secondary: '#F5F5F5',
-        accent: '#E31937',
+        accent: '#00BFB3',
         dark: '#333333',
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
+      },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(to right, #00A651, #00BFB3)',
       },
     },
   },

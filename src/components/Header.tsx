@@ -16,14 +16,25 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex flex-col items-start">
             <motion.div 
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.5 }}
               className="text-2xl font-bold text-primary"
             >
-              <span className="text-primary">Rentokil</span>
+              <span className="text-primary">RCPC NUISIBLES</span>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-xs text-gray-600 mt-1"
+            >
+              <span className="text-primary font-semibold">R</span>ats / 
+              <span className="text-primary font-semibold">C</span>afards / 
+              <span className="text-primary font-semibold">P</span>unaises / 
+              <span className="text-primary font-semibold">C</span>ompétence
             </motion.div>
           </Link>
 
