@@ -23,7 +23,7 @@ const Header = () => {
               transition={{ duration: 0.5 }}
               className="text-2xl font-bold text-primary"
             >
-              <span className="text-primary">RCPC NUISIBLES</span>
+              <span className="text-primary">RSPC NUISIBLES</span>
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}

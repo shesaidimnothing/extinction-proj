@@ -261,7 +261,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold mb-2 text-dark">Téléphone</h3>
-              <p className="text-dark">01 23 45 67 89</p>
+              <p className="text-dark">07 69 77 75 36</p>
               <p className="text-gray-500 text-sm mt-1">Lun-Ven: 8h-19h | Sam: 9h-17h</p>
             </motion.div>
 
@@ -277,7 +277,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold mb-2 text-dark">Email</h3>
-              <p className="text-dark">contact@rentokil.fr</p>
+              <p className="text-dark">rspcnuisibles@gmail.com</p>
               <p className="text-gray-500 text-sm mt-1">Nous répondons sous 24h</p>
             </motion.div>
 
