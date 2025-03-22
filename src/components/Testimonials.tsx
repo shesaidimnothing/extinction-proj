@@ -8,7 +8,7 @@ const testimonials = [
     id: 1,
     name: 'Sophie Martin',
     location: 'Paris 15ème',
-    text: 'Service impeccable et très professionnel. Intervention rapide pour un problème de souris dans mon appartement. RCPC NUISIBLES a résolu mon problème en une seule visite !',
+    text: 'Service impeccable et très professionnel. Intervention rapide pour un problème de souris dans mon appartement. RSPC NUISIBLES a résolu mon problème en une seule visite !',
     rating: 5,
     service: 'Traitement anti-rongeurs',
   },
@@ -16,7 +16,7 @@ const testimonials = [
     id: 2,
     name: 'Thomas Dubois',
     location: 'Neuilly-sur-Seine',
-    text: 'Excellente prestation pour l\'élimination de cafards dans notre restaurant. Équipe réactive et efficace. Je recommande vivement RCPC NUISIBLES pour les professionnels.',
+    text: 'Excellente prestation pour l\'élimination de cafards dans notre restaurant. Équipe réactive et efficace. Je recommande vivement RSPC NUISIBLES pour les professionnels.',
     rating: 5,
     service: 'Désinsectisation',
   },
@@ -79,7 +79,7 @@ const Testimonials = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Ce que disent nos clients</h2>
           <p className="text-dark max-w-3xl mx-auto">
-            Découvrez les témoignages de nos clients satisfaits des services de RCPC NUISIBLES en Île-de-France.
+            Découvrez les témoignages de nos clients satisfaits des services de RSPC NUISIBLES en Île-de-France.
           </p>
         </motion.div>
 

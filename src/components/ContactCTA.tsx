@@ -20,7 +20,7 @@ const ContactCTA = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Un problème de nuisibles ? RCPC NUISIBLES intervient rapidement !
+              Un problème de nuisibles ? RSPC NUISIBLES intervient rapidement !
             </h2>
             <p className="text-white/90 text-lg mb-6">
               Nos experts interviennent rapidement en Île-de-France pour éliminer rats, cafards et punaises de lit. Demandez un devis gratuit et sans engagement.

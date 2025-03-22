@@ -16,7 +16,7 @@ const Footer = () => {
               transition={{ duration: 0.5 }}
               className="text-2xl font-bold text-white mb-4"
             >
-              RCPC NUISIBLES
+              RSPC NUISIBLES
             </motion.div>
             <p className="text-white opacity-90 mb-4">
               Spécialiste du traitement contre les nuisibles en Île-de-France. Nous proposons des solutions efficaces et respectueuses de l'environnement.
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white border-opacity-20 mt-12 pt-8 text-center text-white text-sm opacity-90">
-          <p>&copy; {new Date().getFullYear()} RCPC NUISIBLES. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} RSPC NUISIBLES. Tous droits réservés.</p>
           <div className="mt-2 space-x-4">
             <Link href="/mentions-legales" className="hover:text-accent transition-colors">Mentions Légales</Link>
             <Link href="/politique-confidentialite" className="hover:text-accent transition-colors">Politique de Confidentialité</Link>

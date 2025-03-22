@@ -58,7 +58,7 @@ const Hero = () => {
           >
             <div className="mb-4">
               <h1 className="text-4xl md:text-5xl font-bold text-primary mb-2">
-                RCPC NUISIBLES
+                RSPC NUISIBLES
               </h1>
               <div className="text-sm text-dark mb-2 flex items-center">
                 <span className="text-primary font-semibold mr-1">R</span>ats / 
