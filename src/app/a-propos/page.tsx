@@ -15,7 +15,6 @@ export default function About() {
         >
           <h1 className="text-3xl md:text-4xl font-bold text-primary mb-4">À Propos de Rentokil</h1>
           <p className="text-dark max-w-3xl mx-auto">
-            Depuis plus de 90 ans, Rentokil est le leader mondial dans la lutte antiparasitaire, offrant des solutions efficaces et durables pour protéger les foyers et les entreprises.
           </p>
         </motion.div>
 
@@ -29,14 +28,12 @@ export default function About() {
             <div className="p-6 md:p-8">
               <h2 className="text-2xl font-semibold text-primary mb-4">Notre Histoire</h2>
               <p className="text-dark mb-4">
-                Fondée en 1927 au Royaume-Uni, Rentokil s'est développée pour devenir une référence mondiale dans le domaine de la lutte antiparasitaire. Notre expertise s'est construite au fil des décennies, nous permettant d'offrir aujourd'hui des services de qualité supérieure dans plus de 80 pays.
+              Nos spécialistes en gestion des nuisibles sont dédiés à vous offrir des solutions efficaces et durables pour protéger votre environnement contre toute infestation. Forts de nombreuses années d'expérience dans le domaine, nous mettons notre savoir-faire au service des particuliers et des entreprises pour éradiquer et prévenir la présence de nuisibles tels que les rats, souris, insectes et autres parasites.
               </p>
               <p className="text-dark mb-4">
-                En France, Rentokil est présente depuis plus de 50 ans et dispose d'un réseau d'agences couvrant l'ensemble du territoire. Notre équipe en Île-de-France est composée de techniciens certifiés, formés aux dernières techniques de lutte contre les nuisibles.
-              </p>
+              Nous sommes soucieux de votre bien-être et de celui de votre entourage, c'est pourquoi nous utilisons des méthodes respectueuses de l'environnement et des normes sanitaires les plus strictes. Chaque intervention est réalisée avec soin et professionnalisme, afin de vous garantir un service rapide et de qualité.              </p>
               <p className="text-dark">
-                Notre mission est simple : protéger les personnes et préserver les biens contre les nuisibles, tout en respectant l'environnement.
-              </p>
+              Chez [Nom de votre entreprise], nous croyons en une approche personnalisée : chaque situation est unique, et c'est pourquoi nous élaborons des solutions sur mesure adaptées à vos besoins spécifiques. Nous mettons tout en œuvre pour vous offrir une tranquillité d'esprit, en assurant un suivi et un contrôle régulier.              </p>
             </div>
           </motion.div>
 

@@ -32,9 +32,9 @@ const Header = () => {
               className="text-xs text-gray-600 mt-1"
             >
               <span className="text-primary font-semibold">R</span>ats / 
-              <span className="text-primary font-semibold">C</span>afards / 
+              <span className="text-primary font-semibold">S</span>ouris / 
               <span className="text-primary font-semibold">P</span>unaises / 
-              <span className="text-primary font-semibold">C</span>ompétence
+              <span className="text-primary font-semibold">C</span>afards
             </motion.div>
           </Link>
 

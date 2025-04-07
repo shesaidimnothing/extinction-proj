@@ -23,9 +23,9 @@ const Footer = () => {
             </p>
             <div className="text-xs text-white opacity-80 mb-4">
               <span className="font-semibold">R</span>ats / 
-              <span className="font-semibold">C</span>afards / 
+              <span className="font-semibold">S</span>ouris / 
               <span className="font-semibold">P</span>unaises / 
-              <span className="font-semibold">C</span>ompétence
+              <span className="font-semibold">C</span>afards
             </div>
           </div>
 
