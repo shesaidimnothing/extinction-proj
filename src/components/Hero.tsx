@@ -62,9 +62,9 @@ const Hero = () => {
               </h1>
               <div className="text-sm text-dark mb-2 flex items-center">
                 <span className="text-primary font-semibold mr-1">R</span>ats / 
-                <span className="text-primary font-semibold mx-1">C</span>afards / 
+                <span className="text-primary font-semibold mx-1">S</span>ouris / 
                 <span className="text-primary font-semibold mx-1">P</span>unaises / 
-                <span className="text-primary font-semibold ml-1">C</span>ompétence
+                <span className="text-primary font-semibold ml-1">C</span>afards
               </div>
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-dark mb-6">
